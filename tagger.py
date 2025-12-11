@@ -160,7 +160,7 @@ def main():
     
     results = process_concurrently_threads(
         client=client,
-        prompt_id="fvtfhfroee43vgkfp7rs",
+        prompt_id=os.environ["YANDEX_CLOUD_AGENT_ID"],
         chunks=chunks,
         max_workers=max_workers,
     )
